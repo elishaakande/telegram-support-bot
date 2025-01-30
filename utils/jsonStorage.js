@@ -1,10 +1,11 @@
 const fs = require("fs");
 const path = require("path");
 
-const filePath = path.join(__dirname, "data", "faq.json");
+const filePath = path.join(__dirname, "../data/faq.json");
 
 const loadData = () => {
   try {
+    console.log(filePath);
     return JSON.parse(fs.readFileSync(filePath, "utf8"));
   } catch (error) {
     return [];
