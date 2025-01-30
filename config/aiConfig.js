@@ -4,12 +4,6 @@ const hf = new HfInference(process.env.HUGGINGFACE_ACCESS_TOKEN);
 
 const getAIResponse = async (query) => {
   try {
-    // const response = await hf.textGeneration({
-    //   model: "google/flan-t5-large",
-    //   inputs: query,
-    //   provider: "hf-inference",
-    // });
-
     const response = await hf.chatCompletion({
       model: "mistralai/Mistral-7B-Instruct-v0.3",
       messages: [
