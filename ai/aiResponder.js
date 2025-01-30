@@ -24,7 +24,8 @@ const handleAIResponse = async (query) => {
   if (faqAnswer) return faqAnswer;
 
   // Get AI-generated response if no FAQ match
-  return await getAIResponse(query);
+  // return await getAIResponse(query);
+  return "Sorry! I'm still at development phase and new answers will be added";
 };
 
 module.exports = { handleAIResponse };
