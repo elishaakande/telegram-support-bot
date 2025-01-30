@@ -1,5 +1,7 @@
 const fs = require("fs");
-const filePath = "./data/faq.json";
+const path = require("path");
+
+const filePath = path.join(__dirname, "data", "faq.json");
 
 const loadData = () => {
   try {
